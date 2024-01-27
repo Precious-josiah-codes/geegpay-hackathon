@@ -4,6 +4,7 @@ import { useState } from "react";
 import {
   Bar,
   BarChart,
+  CartesianGrid,
   Label,
   Rectangle,
   ResponsiveContainer,
@@ -81,7 +82,7 @@ const BarCharts = () => {
           axisLine={false}
           tickFormatter={(value) => `$${value}`}
         />
-        <Label value="any" />
+        <CartesianGrid strokeDasharray="3 3" />
         <Tooltip content={CustomTooltip} />
         <Bar
           dataKey="total"
